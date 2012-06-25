@@ -1,0 +1,29 @@
+# File ~/.tm_properties
+
+# Display the name of the home directory.
+windowTitle         = "$TM_DISPLAYNAME — ${CWD/^.*\///}"
+
+# Exclude these files
+exclude             = "{$exclude,*.tmproj}"
+
+[ *.* ]
+softTabs            = true
+projectDirectory    = "$CWD"
+
+[ text ]
+softWrap            = false
+softTabs            = true
+tabSize             = 2
+spellChecking       = true
+
+[ source.ruby ]
+softTabs         = true
+tabSize          = 2
+
+[ source.javascript ]
+softTabs         = true
+tabSize          = 2
+
+
+# Variables
+TM_ORGANIZATION_NAME = 'Unboxed Consulting'
