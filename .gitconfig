@@ -1,0 +1,13 @@
+[user]
+	name = Andrew Mitchell
+	email = andrew.mitchell@unboxedconsulting.com
+[mergetool]
+	keepBackup = true
+[http]
+	sslVerify = false
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+[core]
+	excludesfile = ~/.gitignore-global
