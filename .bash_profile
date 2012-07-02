@@ -47,7 +47,7 @@ switch_db() {
     fi
 
     if [ $1 == "main" ]; then
-        echo "==> Moving to mysql_old to mysql..."
+        echo "==> Moving mysql_old to mysql..."
         mv /usr/local/var/mysql_old /usr/local/var/mysql
     else
         echo "==> Symlinking $1 on StorageHD..."
@@ -55,7 +55,7 @@ switch_db() {
     fi
 
     echo "==> Your /usr/local/var/ directory now looks like this:-"
-    ll /usr/local/var/
+    ls -lah /usr/local/var/
 
     echo "==> Reloading MySQL"
     cp /usr/local/Cellar/mysql/5.5.20/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/

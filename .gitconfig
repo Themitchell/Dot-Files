@@ -10,4 +10,4 @@
 	branch = auto
 	status = auto
 [core]
-	excludesfile = ~/.gitignore-global
+	excludesfile = /Users/themitchell/.gitignore-global
