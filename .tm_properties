@@ -1,5 +1,8 @@
 # File ~/.tm_properties
 
+# Variables
+TM_ORGANIZATION_NAME = 'Unboxed Consulting'
+
 # Display the name of the home directory.
 windowTitle         = "$TM_DISPLAYNAME — ${CWD/^.*\///}"
 
@@ -23,7 +26,3 @@ tabSize          = 2
 [ source.javascript ]
 softTabs         = true
 tabSize          = 2
-
-
-# Variables
-TM_ORGANIZATION_NAME = 'Unboxed Consulting'
