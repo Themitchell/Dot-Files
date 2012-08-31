@@ -64,21 +64,6 @@ switch_db() {
 }
 
 # Ruby & Rails
-rails-s(){
-  if [ -f "script/server" ]; then
-    ruby ./script/server $1
-  else
-    rails server $1
-  fi
-}
-
-rails-c(){
-  if [ -f "script/console" ]; then
-    ruby ./script/console $1
-  else
-    rails console $1
-  fi
-}
 alias tt="touch tmp/restart.txt"
 alias be="bundle exec"
 
