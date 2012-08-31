@@ -8,11 +8,6 @@ ssh-add
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source /usr/local/Cellar/rbenv/0.3.0/completions/rbenv.bash
-alias gemset='rbenv-gemset'
-
-rbenv_gemset() {
-  gemset active 2> /dev/null | sed -e 's/\(.*\)/@\1 /'
-}
 
 rbenv_ruby_version() {
     if [ "$(rbenv version-name)" == "system" ]
@@ -22,11 +17,6 @@ rbenv_ruby_version() {
         echo "$(rbenv version-name)"
     fi
 }
-
-rbenv_version_and_gemset() {
-  echo "$(rbenv_ruby_version)$(rbenv_gemset)"
-}
-
 
 # Git
 source ~/.git-completion.sh
@@ -75,6 +65,7 @@ export NODE_ENV=development
 # TextMate / Sublime
 export EDITOR="subl -w"
 export BUNDLE_DITOR="subl"
+alias mate='subl'
 
 # General
 alias ls='ls -F'
@@ -83,7 +74,7 @@ alias ll='ls -lah'
 # Comman Line Colours
 case "$TERM" in
 xterm*)
-        PS1='\[\033[0;35m\]$(rbenv_version_and_gemset)\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[00m\]:\[\033[0;37m\]\w\[\033[0;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+        PS1='\[\033[0;35m\]$(rbenv_ruby_version)\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[00m\]:\[\033[0;37m\]\w\[\033[0;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
         ;;
 *)
         PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '
