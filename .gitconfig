@@ -10,6 +10,6 @@
 	branch = auto
 	status = auto
 [core]
-	excludesfile = /Users/themitchell/.gitignore-global
+	excludesfile = /Users/andy/.gitignore-global
 [push]
 	default = simple
