@@ -1,8 +1,13 @@
 *
-!.gitignore
+
 !.bash_profile
+!.gitignore
 !.git-aliases.sh
 !.git-completion.sh
 !.gitconfig
+!.rspec
 !.tm_properties
 !.pow
+!.viminfo
+!.vimrc
+!.vim
