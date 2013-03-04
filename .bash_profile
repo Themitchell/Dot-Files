@@ -57,6 +57,9 @@ switch_db() {
 alias tt="touch tmp/restart.txt"
 alias be="bundle exec"
 
+# Elastic Search
+alias elasticsearch-start="elasticsearch -f -D"
+
 # Node
 export PATH="/usr/local/Cellar/node:/usr/local/share/npm/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
