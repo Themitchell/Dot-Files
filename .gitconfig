@@ -11,3 +11,5 @@
 	status = auto
 [core]
 	excludesfile = /Users/themitchell/.gitignore-global
+[push]
+	default = simple
