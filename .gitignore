@@ -1,6 +1,7 @@
 *
 
 !.bash_profile
+!.global-gitignore
 !.gitignore
 !.git-aliases.sh
 !.git-completion.sh
