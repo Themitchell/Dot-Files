@@ -1,5 +1,5 @@
 # PATH
-export PATH="~/bin;/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # SSH
 ssh-add
