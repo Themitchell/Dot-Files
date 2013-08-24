@@ -1,14 +1,22 @@
 *
 
 !.bash_profile
+
+# GIT
 !.global-gitignore
 !.gitignore
 !.git-aliases.sh
 !.git-completion.sh
 !.gitconfig
+
+# RUBY & RAILS
 !.rspec
-!.tm_properties
+!.ec2
 !.pow
+!.tm_properties
+!.rdebugrc
+
+# VIM
 !.viminfo
 !.vimrc
 !.vim
