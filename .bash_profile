@@ -80,6 +80,9 @@ export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export EC2_AMITOOL_HOME="/usr/local/Library/LinkedKegs/ec2-ami-tools/jars"
 
+# Python
+export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages:$PYTHONPATH
+
 # General
 alias ls='ls -F'
 alias ll='ls -lah'
