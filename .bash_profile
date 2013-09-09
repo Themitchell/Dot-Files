@@ -87,7 +87,7 @@ export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages:$PYTHONPATH
 alias ls='ls -F'
 alias ll='ls -lah'
 
-# Comman Line Colours
+# Command Line Colours
 case "$TERM" in
 xterm*)
         PS1='\[\033[0;35m\]$(rbenv_ruby_version)\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[00m\]:\[\033[0;37m\]\w\[\033[0;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
