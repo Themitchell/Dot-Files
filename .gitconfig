@@ -13,3 +13,5 @@
 	excludesfile = /Users/andy/.gitignore-global
 [push]
 	default = simple
+[rerere]
+	enabled = false
