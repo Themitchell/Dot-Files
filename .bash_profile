@@ -2,7 +2,7 @@
 export PATH="~/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 
 # SSH
-ssh-add
+ssh-add > /dev/null 2>&1
 
 # RBENV
 export PATH="$HOME/.rbenv/bin:$PATH"
