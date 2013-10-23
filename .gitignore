@@ -21,4 +21,6 @@
 !.vimrc
 !.vim
 
+# Other
+!~/bin
 .DS_Store
