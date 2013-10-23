@@ -11,7 +11,10 @@
 	status = auto
 [core]
 	excludesfile = /Users/andy/.gitignore-global
+	autocrlf = input
 [push]
 	default = simple
 [rerere]
 	enabled = false
+[alias]
+	dfw = diff --ignore-space-change
