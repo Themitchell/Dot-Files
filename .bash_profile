@@ -30,6 +30,18 @@ pyenv_python_version() {
         echo "Py: $(pyenv version-name) "
     fi
 }
+
+# NDENV
+export PATH="$HOME/.ndenv/bin:$PATH"
+if which ndenv > /dev/null; then eval "$(ndenv init -)"; fi
+export NODE_ENV=development
+
+ndenv_node_version() {
+    if [ "$(ndenv version-name)" == "system" ]
+    then
+        echo ""
+    else
+        echo "Nd: $(ndenv version-name) "
     fi
 }
 
@@ -78,11 +90,6 @@ alias db-migrate="be rake db:migrate db:test:prepare"
 
 # Elastic Search
 alias elasticsearch-start="elasticsearch -f -D"
-
-# Node
-export PATH="/usr/local/Cellar/node:/usr/local/share/npm/bin:$PATH"
-export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
-export NODE_ENV=development
 
 # TextMate / Sublime
 export EDITOR="subl -w"
