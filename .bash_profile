@@ -17,6 +17,19 @@ rbenv_ruby_version() {
         echo "Rb: $(rbenv version-name) "
     fi
 }
+
+# PYENV
+export PYENV_ROOT="/usr/local/opt/pyenv"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+pyenv_python_version() {
+    if [ "$(pyenv version-name)" == "system" ]
+    then
+        echo ""
+    else
+        echo "Py: $(pyenv version-name) "
+    fi
+}
     fi
 }
 
@@ -81,9 +94,6 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export EC2_AMITOOL_HOME="/usr/local/Library/LinkedKegs/ec2-ami-tools/jars"
-
-# Python
-export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages:$PYTHONPATH
 
 # General
 alias ls='ls -F'
