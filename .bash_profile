@@ -14,7 +14,9 @@ rbenv_ruby_version() {
     then
         echo ""
     else
-        echo "$(rbenv version-name)"
+        echo "Rb: $(rbenv version-name) "
+    fi
+}
     fi
 }
 
