@@ -96,6 +96,9 @@ export EDITOR="subl -w"
 export BUNDLE_DITOR="subl"
 alias mate='subl'
 
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # Amazon AWS/EC2
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
@@ -115,9 +118,3 @@ xterm*)
         PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '
         ;;
 esac
-
-
-
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
