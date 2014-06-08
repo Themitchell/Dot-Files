@@ -109,7 +109,7 @@ alias ll='ls -lah'
 # Command Line Colours
 case "$TERM" in
 xterm*)
-        PS1='\[\033[0;35m\]$(rbenv_ruby_version)\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[00m\]:\[\033[0;37m\]\w\[\033[0;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+        PS1='\[\033[0;92m\]$(pyenv_python_version)\[\033[0;95m\]$(rbenv_ruby_version)\[\033[0;91m\]$(ndenv_node_version)\[\033[0;96m\]\u\[\033[0;97m\]@\[\033[0;96m\]\h\[\033[00m\]:\[\033[0;97m\]\w\[\033[0;93m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
         ;;
 *)
         PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '
