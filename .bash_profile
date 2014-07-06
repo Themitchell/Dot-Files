@@ -4,18 +4,29 @@ export PATH="~/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 # SSH
 ssh-add > /dev/null 2>&1
 
+env_version_cmd() {
+    echo "$($1env version-name)"
+}
+
+output_env_version() {
+    if [ "$(env_version_cmd $1)" == "" ]
+    then
+        echo "$1: Version not installed! "
+    elif [ "$(env_version_cmd $1)" == "system" ]
+    then
+        echo ""
+    else
+        echo "$1: $(env_version_cmd $1) "
+    fi
+}
+
 # RBENV
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source /usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash
 
 rbenv_ruby_version() {
-    if [ "$(rbenv version-name)" == "system" ]
-    then
-        echo ""
-    else
-        echo "Rb: $(rbenv version-name) "
-    fi
+    echo "$(output_env_version rb)"
 }
 
 # PYENV
@@ -23,12 +34,7 @@ export PYENV_ROOT="/usr/local/opt/pyenv"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 pyenv_python_version() {
-    if [ "$(pyenv version-name)" == "system" ]
-    then
-        echo ""
-    else
-        echo "Py: $(pyenv version-name) "
-    fi
+    echo "$(output_env_version py)"
 }
 
 # NDENV
@@ -37,12 +43,7 @@ if which ndenv > /dev/null; then eval "$(ndenv init -)"; fi
 export NODE_ENV=development
 
 ndenv_node_version() {
-    if [ "$(ndenv version-name)" == "system" ]
-    then
-        echo ""
-    else
-        echo "Nd: $(ndenv version-name) "
-    fi
+    echo "$(output_env_version nd)"
 }
 
 # Git
