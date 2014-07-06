@@ -1,12 +1,11 @@
 *
 
 !.bash_profile
+!/.bash_partials/
 
 # GIT
 !.global-gitignore
 !.gitignore
-!.git-aliases.sh
-!.git-completion.sh
 !.gitconfig
 
 # RUBY & RAILS
