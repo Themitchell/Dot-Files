@@ -14,6 +14,7 @@ source ~/.bash_partials/rbenv.sh
 source ~/.bash_partials/mongodb.sh
 source ~/.bash_partials/mysql.sh
 source ~/.bash_partials/postgres.sh
+source ~/.bash_partials/redis.sh
 
 # App Environment
 source ~/.bash_partials/ruby_and_rails.sh
