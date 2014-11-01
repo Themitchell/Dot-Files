@@ -16,7 +16,6 @@
 !.rdebugrc
 
 # VIM
-!.viminfo
 !.vimrc
 !.vim
 
