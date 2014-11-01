@@ -6,7 +6,7 @@ source ~/.bash_partials/ssh.sh
 source ~/.bash_partials/git.sh
 
 # Language Environment
-source ~/.bash_partials/ndenv.sh
+source ~/.bash_partials/nodenv.sh
 source ~/.bash_partials/pyenv.sh
 source ~/.bash_partials/rbenv.sh
 
