@@ -1,20 +1,36 @@
 [user]
 	name = Andy Mitchell
 	email = themitchell@me.com
+
 [mergetool]
 	keepBackup = true
+
 [http]
 	sslVerify = false
+
 [color]
 	diff = auto
 	branch = auto
 	status = auto
+
+[color "status"]
+  added = blue
+  changed = yellow
+  untracked = black
+
+[color "diff"]
+  meta = black bold
+  frag = magenta ul
+  old = red bold
+  new = green bold
+
 [core]
 	excludesfile = /Users/andy/.gitignore-global
 	autocrlf = input
+	editor = subl -w
+
 [push]
 	default = simple
+
 [rerere]
 	enabled = false
-[alias]
-	dfw = diff --ignore-space-change
