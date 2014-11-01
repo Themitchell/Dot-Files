@@ -1,6 +1,9 @@
 # PATH
 export PATH="~/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 
+# Homebrew Cask options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Development Environment
 source ~/.bash_partials/ssh.sh
 source ~/.bash_partials/git.sh
