@@ -1,1 +1,1 @@
-alias start-postgres=" postgres -D /usr/local/var/postgres"
+alias start-postgres="pg_ctl start -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
