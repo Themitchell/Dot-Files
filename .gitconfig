@@ -16,7 +16,7 @@
 [color "status"]
   added = blue
   changed = yellow
-  untracked = black
+  untracked = white dim
 
 [color "diff"]
   meta = black bold
