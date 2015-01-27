@@ -12,7 +12,7 @@ alias gsh='git stash'
 alias gst='git status'
 alias gad='git add'
 alias gg='git grep'
-alias gll='git log --pretty=format:"%x1b[33m%h %Cgreen%m%Creset %s %Cgreen(%an)%Creset" -n 10'
+alias gll='git log --pretty=format:"%x1b[33m%h %Cgreen%m%Creset %s %Cgreen(%an)%Creset" -n 20'
 
 
 complete -o default -o nospace -F _git_branch gbr
