@@ -28,7 +28,7 @@ source ~/.bash_partials/elasticsearch.sh
 source ~/.bash_partials/text_editors.sh
 
 # Servers & Infrastructures
-# source ~/.bash_partials/ec2.sh
+source ~/.bash_partials/aws.sh
 source ~/.bash_partials/heroku.sh
 
 # General
