@@ -1,4 +1,4 @@
 # TextMate / Sublime
 export EDITOR="subl -w"
-export BUNDLE_DITOR="subl"
+export BUNDLE_EDITOR="subl"
 alias mate='subl'
