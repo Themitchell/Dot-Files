@@ -8,13 +8,15 @@ export DEV_VM_CODE_DIR=Code
 alias sshvm="ssh $DEV_VM_USERNAME@$DEV_VM_HOST"
 # alias codeshare="sshfs -o IdentityFile=~/.ssh/id_rsa -o defer_permissions -o Ciphers=arcfour -o Compression=no $DEV_VM_USERNAME@$DEV_VM_HOST:Code ~/Songkick/VMCode"
 
-sync() {
+sk-sync() {
   echo "Syncing $(basename $(pwd)) from $(pwd) to $DEV_VM_USERNAME@$DEV_VM_HOST:$DEV_VM_CODE_DIR/$(basename $(pwd))/"
   rsync -avrx --delete --exclude=log --exclude=tmp --exclude=vendor/bundle --filter='P vendor/bundle' --exclude=.bundle --filter='P .bundle' --exclude=.git -e ssh . $DEV_VM_USERNAME@$DEV_VM_HOST:$DEV_VM_CODE_DIR/$(basename $(pwd))/
 }
 
-watch-sync() {
+sk-watch-sync() {
   filewatcher_path=$(which filewatcher)
+
+  rsync -avrx --delete --exclude=log --exclude=tmp --exclude=vendor/bundle --filter='P vendor/bundle' --exclude=.bundle --filter='P .bundle' --exclude=.git -e ssh . $DEV_VM_USERNAME@$DEV_VM_HOST:$DEV_VM_CODE_DIR/$(basename $(pwd))/
 
   if [ -x $filewatcher_path ]; then
     echo "Watching for changes and waiting to sync..."
