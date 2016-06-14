@@ -13,7 +13,7 @@ alias gpo='git pop'
 alias gst='git status'
 alias gad='git add'
 alias gg='git grep'
-alias gll='git log --pretty=format:"%x1b[33m%h %Cgreen%m%Creset %s %Cgreen(%an)%Creset" -n 20'
+alias gll='git log --pretty=format:"%x1b[33m%h %Cgreen%m%Creset %s %Cgreen(%an)%Creset" -n 30'
 
 
 complete -o default -o nospace -F _git_branch gbr
