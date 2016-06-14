@@ -35,5 +35,8 @@ source ~/.bash_partials/heroku.sh
 source ~/.bash_partials/general_aliases.sh
 source ~/.bash_partials/colour_ouput.sh
 
+# Docker
+source ~/.bash_partials/docker.sh
+
 # Songkick
 source ~/.bash_partials/songkick.sh
