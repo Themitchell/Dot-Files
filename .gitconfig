@@ -2,6 +2,9 @@
 	name = Andy Mitchell
 	email = themitchell@me.com
 
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+
 [mergetool]
 	keepBackup = true
 
