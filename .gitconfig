@@ -1,9 +1,9 @@
 [user]
 	name = Andy Mitchell
-	email = themitchell@me.com
+	email = me@themitchell.co.uk
 
 [url "git@github.com:"]
-        insteadOf = https://github.com/
+  insteadOf = https://github.com/
 
 [mergetool]
 	keepBackup = true
@@ -41,7 +41,7 @@
 [alias]
   br  = branch
   co  = checkout
-  ci  = commit
+  cm  = commit
   st  = status
   df = diff
   dc = diff --cached
