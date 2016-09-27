@@ -23,6 +23,7 @@ source ~/.bash_partials/redis.sh
 # App Environment
 source ~/.bash_partials/ruby_and_rails.sh
 source ~/.bash_partials/elasticsearch.sh
+source ~/.bash_partials/go.sh
 
 # Editors & IDEs
 source ~/.bash_partials/text_editors.sh
