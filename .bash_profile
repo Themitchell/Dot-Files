@@ -29,7 +29,6 @@ source ~/.bash_partials/go.sh
 source ~/.bash_partials/text_editors.sh
 
 # Servers & Infrastructures
-source ~/.bash_partials/aws.sh
 source ~/.bash_partials/heroku.sh
 
 # General
