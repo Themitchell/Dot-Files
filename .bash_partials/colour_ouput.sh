@@ -35,7 +35,7 @@ output_env_version() {
 
 case "$TERM" in
 xterm*)
-        PS1='\[\033[0;92m\]$(output_env_version py)\[\033[0;95m\]$(output_env_version rb)\[\033[0;91m\]$(output_env_version nod)\[\033[0;96m\]\u\[\033[0;97m\]@\[\033[0;96m\]\h\[\033[00m\]:\[\033[0;97m\]\w\[\033[0;93m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+        PS1='\[\033[0;92m\]$(output_env_version py)\[\033[0;95m\]$(output_env_version rb)\[\033[0;91m\]$(output_env_version nod)\[\033[0;94m\]$(output_env_version ex)\[\033[0;96m\]\u\[\033[0;97m\]@\[\033[0;96m\]\h\[\033[00m\]:\[\033[0;97m\]\w\[\033[0;93m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
         ;;
 *)
         PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '

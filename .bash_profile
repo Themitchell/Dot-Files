@@ -13,6 +13,7 @@ source ~/.bash_partials/git.sh
 source ~/.bash_partials/nodenv.sh
 source ~/.bash_partials/pyenv.sh
 source ~/.bash_partials/rbenv.sh
+source ~/.bash_partials/exenv.sh
 
 # Data stores
 source ~/.bash_partials/mongodb.sh
