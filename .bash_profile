@@ -40,5 +40,8 @@ source ~/.bash_partials/colour_ouput.sh
 # Docker
 source ~/.bash_partials/docker.sh
 
+# Google Cloud
+source ~/.bash_partials/google-cloud.sh
+
 # Songkick
 source ~/.bash_partials/songkick.sh
