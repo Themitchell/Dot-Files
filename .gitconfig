@@ -67,3 +67,8 @@
   dump = cat-file -p
   fixup = !git rev-list -1 $1 | xargs -I % sh -c 'git commit --fixup % && GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash %^'
   feature = checkout -b feature/$1
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
