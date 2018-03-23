@@ -32,6 +32,7 @@ source ~/.bash_partials/text_editors.sh
 
 # Servers & Infrastructures
 source ~/.bash_partials/heroku.sh
+source ~/.bash_partials/ansible.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
