@@ -39,6 +39,9 @@ source ~/.bash_partials/colour_ouput.sh
 # Docker
 source ~/.bash_partials/docker.sh
 
+# Vagrant
+source ~/.bash_partials/vagrant.sh
+
 # Google Cloud
 source ~/.bash_partials/google-cloud.sh
 
