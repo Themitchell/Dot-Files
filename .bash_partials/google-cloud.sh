@@ -3,3 +3,5 @@ if [ -f '/usr/local/bin/google-cloud-sdk/path.bash.inc' ]; then source '/usr/loc
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/bin/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/bin/google-cloud-sdk/completion.bash.inc'; fi
+
+export APPENGINE_PATH="/usr/local/bin/google-cloud-sdk/platform/google_appengine"
