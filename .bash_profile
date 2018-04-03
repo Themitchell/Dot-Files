@@ -47,3 +47,4 @@ source ~/.bash_partials/google-cloud.sh
 
 # Songkick
 source ~/.bash_partials/songkick.sh
+source ~/.bash_partials/palatinate.sh
