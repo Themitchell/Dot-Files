@@ -15,9 +15,6 @@ source ~/.bash_partials/exenv.sh
 # App Environment
 source ~/.bash_partials/go.sh
 
-# Editors & IDEs
-source ~/.bash_partials/text_editors.sh
-
 # Servers & Infrastructures
 # source ~/.bash_partials/heroku.sh
 # source ~/.bash_partials/ansible.sh
