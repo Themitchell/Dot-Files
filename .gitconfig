@@ -22,7 +22,7 @@
   untracked = white dim
 
 [color "diff"]
-  meta = black bold
+  meta = white bold
   frag = magenta ul
   old = red bold
   new = green bold

@@ -13,8 +13,6 @@ source ~/.bash_partials/rbenv.sh
 source ~/.bash_partials/exenv.sh
 
 # App Environment
-source ~/.bash_partials/ruby_and_rails.sh
-source ~/.bash_partials/elasticsearch.sh
 source ~/.bash_partials/go.sh
 
 # Editors & IDEs
