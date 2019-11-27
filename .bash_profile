@@ -36,6 +36,3 @@ source ~/.bash_partials/google-cloud.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
-
-# Vagrant
-source ~/.bash_partials/vagrant.sh
