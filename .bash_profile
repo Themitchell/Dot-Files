@@ -1,5 +1,5 @@
 # PATH
-export PATH="~/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
+# export PATH="~/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
 
 # Development Environment
 source ~/.bash_partials/bash.sh
