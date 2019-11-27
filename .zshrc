@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Poor form i know but until ive migrated over completely, lets keeps this here
+source ~/.bash_profile
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/andy/.oh-my-zsh"
 
@@ -86,6 +89,7 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
   export EDITOR='subl -w'
+  export BUNDLE_EDITOR='subl'
 fi
 
 # Compilation flags
