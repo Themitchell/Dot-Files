@@ -32,15 +32,13 @@ source ~/.bash_partials/text_editors.sh
 source ~/.bash_partials/heroku.sh
 source ~/.bash_partials/ansible.sh
 source ~/.bash_partials/docker.sh
+source ~/.bash_partials/google-cloud.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
 
 # Vagrant
 source ~/.bash_partials/vagrant.sh
-
-# Google Cloud
-source ~/.bash_partials/google-cloud.sh
 
 # Songkick
 source ~/.bash_partials/songkick.sh
