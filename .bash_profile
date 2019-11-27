@@ -29,8 +29,8 @@ source ~/.bash_partials/go.sh
 source ~/.bash_partials/text_editors.sh
 
 # Servers & Infrastructures
-source ~/.bash_partials/heroku.sh
-source ~/.bash_partials/ansible.sh
+# source ~/.bash_partials/heroku.sh
+# source ~/.bash_partials/ansible.sh
 source ~/.bash_partials/docker.sh
 source ~/.bash_partials/google-cloud.sh
 
