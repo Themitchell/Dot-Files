@@ -31,13 +31,11 @@ source ~/.bash_partials/text_editors.sh
 # Servers & Infrastructures
 source ~/.bash_partials/heroku.sh
 source ~/.bash_partials/ansible.sh
+source ~/.bash_partials/docker.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
 source ~/.bash_partials/colour_ouput.sh
-
-# Docker
-source ~/.bash_partials/docker.sh
 
 # Vagrant
 source ~/.bash_partials/vagrant.sh
