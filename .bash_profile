@@ -35,7 +35,6 @@ source ~/.bash_partials/docker.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
-source ~/.bash_partials/colour_ouput.sh
 
 # Vagrant
 source ~/.bash_partials/vagrant.sh
