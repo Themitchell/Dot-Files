@@ -39,6 +39,3 @@ source ~/.bash_partials/general_aliases.sh
 
 # Vagrant
 source ~/.bash_partials/vagrant.sh
-
-# Songkick
-source ~/.bash_partials/songkick.sh
