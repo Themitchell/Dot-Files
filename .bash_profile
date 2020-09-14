@@ -3,7 +3,6 @@
 
 # Development Environment
 source ~/.bash_partials/homebrew.sh
-source ~/.bash_partials/ssh.sh
 source ~/.bash_partials/git.sh
 
 # Language Environment
