@@ -1,7 +1,7 @@
 # General Aliases
 
 alias ls='ls -F'
-alias ll='ls -lAh'
+alias ll='ls -lah'
 
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 
