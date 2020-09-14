@@ -19,3 +19,6 @@ source ~/.bash_partials/docker.sh
 
 # General
 source ~/.bash_partials/general_aliases.sh
+
+# MIDIBox
+source ~/.bash_partials/midibox.sh
