@@ -1,6 +1,6 @@
 export PATH=$PATH:/usr/local/mios32_toolchain/bin
 
-export MIOS32_PATH=~/Code/mios32/trunk
+export MIOS32_PATH=~/SynologyDrive/Documents/Code/midibox/mios32
 export MIOS32_BIN_PATH=$MIOS32_PATH/bin
 export MIOS32_GCC_PREFIX=arm-none-eabi
 
