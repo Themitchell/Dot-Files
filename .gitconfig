@@ -30,7 +30,7 @@
 [core]
 	excludesfile = /Users/andy/.gitignore-global
 	autocrlf = input
-	editor = subl -w
+	editor = vim
 
 [push]
 	default = simple
