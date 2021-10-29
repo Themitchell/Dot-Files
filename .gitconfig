@@ -1,6 +1,6 @@
 [user]
 	name = Andy Mitchell
-	email = me@themitchell.co.uk
+	email = 326561+Themitchell@users.noreply.github.com
 
 [url "git@github.com:"]
   insteadOf = https://github.com/
@@ -33,7 +33,7 @@
 	editor = vim
 
 [push]
-	default = simple
+	default = current
 
 [rerere]
 	enabled = true
@@ -67,6 +67,7 @@
   dump = cat-file -p
   fixup = !git rev-list -1 $1 | xargs -I % sh -c 'git commit --fixup % && GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash %^'
   feature = checkout -b feature/$1
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -74,3 +75,7 @@
 	process = git-lfs filter-process
 [commit]
 	template = /Users/andy/.git-commit-message
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
