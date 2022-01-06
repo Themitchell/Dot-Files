@@ -1,6 +1,7 @@
 [user]
 	name = Andy Mitchell
 	email = 326561+Themitchell@users.noreply.github.com
+	signingkey = C2A05C456A8E2079BAE77F37C3175FBD65116113
 
 [url "git@github.com:"]
   	insteadOf = https://github.com/
@@ -78,4 +79,5 @@
 [pull]
 	rebase = true
 [init]
-	defaultBranch = master
+	defaultBranch = main
+	gpgsign = true
