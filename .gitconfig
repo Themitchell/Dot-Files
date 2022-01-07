@@ -76,8 +76,8 @@
 	process = git-lfs filter-process
 [commit]
 	template = /Users/andy/.git-commit-message
+	gpgsign = true
 [pull]
 	rebase = true
 [init]
 	defaultBranch = main
-	gpgsign = true
