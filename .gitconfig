@@ -50,6 +50,7 @@
   	plr = pull -r
   	mrg = merge
   	ps  = push
+	psf = push --force-with-lease
   	sh  = stash
   	pop = stash pop
   	grp = grep
