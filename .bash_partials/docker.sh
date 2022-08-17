@@ -7,7 +7,7 @@ export DOCKER_VOLUME_BACKUP_PATH="$HOME/Docker/Volumes/Backup"
 docker_nuke() {
   docker stop $(docker ps -a -q) && \
   docker rm $(docker ps -a -q) && \
-  docker rmi $(docker images -aq)
+  docker rmi --force $(docker images -aq)
 }
 
 docker_volume_backup() {
