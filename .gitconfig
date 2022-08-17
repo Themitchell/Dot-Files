@@ -29,7 +29,7 @@
   	new = green bold
 
 [core]
-	excludesfile = /Users/andy/.gitignore-global
+	excludesfile = /Users/andy/.global-gitignore
 	autocrlf = input
 	editor = vim
 
