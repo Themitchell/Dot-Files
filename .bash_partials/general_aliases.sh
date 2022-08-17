@@ -2,7 +2,7 @@
 
 alias be='bundle exec'
 alias ls='ls -F'
-alias ll='ls -lah'
+alias ll='ls -lGah --color''
 
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 
