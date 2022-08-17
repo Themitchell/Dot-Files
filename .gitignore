@@ -2,6 +2,8 @@
 
 !.bash_profile
 !/.bash_partials/
+!.zshrc
+!/.zsh_partials/
 
 # GIT
 !.global-gitignore
