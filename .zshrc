@@ -108,3 +108,9 @@ fi
 eval "$(pyenv init -)"
 
 source ~/.zsh_partials/general_aliases.sh
+
+export TEST_KITCHEN_IAM_GROUPS=ddcops_engineer,telemetry_engineer
+export TEST_KITCHEN_SSH_KEY_ID=andy.mitchell
+export TEST_KITCHEN_USER=andy.mitchell
+export TEST_KITCHEN_SSH_KEY=/home/andy/.ssh/id_rsa
+export TEST_KITCHEN_INSTANCE_PROFILE=TestKitchen

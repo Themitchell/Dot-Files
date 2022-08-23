@@ -1,7 +1,6 @@
 *
 
-!.bash_profile
-!/.bash_partials/
+!.zprofile
 !.zshrc
 !/.zsh_partials/
 
@@ -9,6 +8,7 @@
 !.global-gitignore
 !.gitignore
 !.gitconfig
+!.git-commit-message
 
 # RUBY & RAILS
 !.rspec
