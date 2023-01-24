@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 ZSH_DISABLE_COMPFIX=true
 
@@ -70,7 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker)
+plugins=(1password aws docker git gh nodenv pyenv rbenv)
 
 setopt HIST_IGNORE_ALL_DUPS
 
@@ -105,7 +105,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-eval "$(pyenv init -)"
 
 source ~/.zsh_partials/general_aliases.sh
 
@@ -114,3 +113,4 @@ export TEST_KITCHEN_SSH_KEY_ID=andy.mitchell
 export TEST_KITCHEN_USER=andy.mitchell
 export TEST_KITCHEN_SSH_KEY=/home/andy/.ssh/id_rsa
 export TEST_KITCHEN_INSTANCE_PROFILE=TestKitchen
+export JEKYLL_GITHUB_TOKEN=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
