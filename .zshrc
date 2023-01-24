@@ -113,4 +113,4 @@ export TEST_KITCHEN_SSH_KEY_ID=andy.mitchell
 export TEST_KITCHEN_USER=andy.mitchell
 export TEST_KITCHEN_SSH_KEY=/home/andy/.ssh/id_rsa
 export TEST_KITCHEN_INSTANCE_PROFILE=TestKitchen
-export JEKYLL_GITHUB_TOKEN=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
+export JEKYLL_GITHUB_TOKEN=
