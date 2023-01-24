@@ -1,7 +1,7 @@
 [user]
 	name = Andy Mitchell
 	email = 326561+Themitchell@users.noreply.github.com
-	signingkey = C2A05C456A8E2079BAE77F37C3175FBD65116113
+	signingkey = /Users/andy/.ssh/id_rsa.pub
 
 [url "git@github.com:"]
   	insteadOf = https://github.com/
@@ -82,3 +82,7 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
